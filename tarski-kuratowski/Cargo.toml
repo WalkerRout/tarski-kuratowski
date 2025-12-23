@@ -1,0 +1,14 @@
+[package]
+name = "lib-tarski-kuratowski"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+lib-fol = { path = "../fol" }
+
+[dev-dependencies]
+criterion = "0.8.1"
+
+[[bench]]
+name = "tarski_kuratowski"
+harness = false

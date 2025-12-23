@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = [
+  "fol",
+  "tarski-kuratowski",
+]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+
+[profile.profiling]
+inherits = "release"
+debug = true
